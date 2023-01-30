@@ -11,7 +11,9 @@ return `[![${license}](https://img.shields.io/badge/License-${license}-yellow.sv
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-if (license === 'mit'){
+if (!license) {
+  return ``
+}else if (license === 'mit'){
   return `https://choosealicense.com/licenses/mit/`
 }else if (license == 'apache'){
   return `https://www.apache.org/licenses/LICENSE-2.0`
