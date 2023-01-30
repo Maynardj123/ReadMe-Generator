@@ -2,15 +2,22 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 if (!license) {
-  return '',
-}
+  return ``
+}else{
 return `[![${license}](https://img.shields.io/badge/License-${license}-yellow.svg)](${renderLicenseLink(license)})`
+}
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+if (license === 'mit'){
+  return `https://choosealicense.com/licenses/mit/`
+}else if (license == 'apache'){
+  return `https://www.apache.org/licenses/LICENSE-2.0`
+}else if (license === 'GNU'){
+  return `https://choosealicense.com/licenses/agpl-3.0/`
+}
 }
 
 // TODO: Create a function that returns the license section of README
