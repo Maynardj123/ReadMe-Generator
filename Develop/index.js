@@ -5,45 +5,88 @@ const fs = require('fs');
 const questions = [
     {
         type: 'input',
-        name: 
-        message: 'what was your motivation',
+        name: 'motive',
+        message: 'what was your motivation?',
         Validate: (answer) => {
             if (answer !== '') {
                 return true;
+            }else{
+            return false;
             }
-            return 'whats the motive';
+        },
+    },
+    {
+        type: 'input',
+        name:'Why',
+        message: 'Why did you build this project',
+        Validate: (answer) => {
+            if (answer !== '') {
+                return true;
+            }else{
+            return false;
+            }
+        },
+    },
+    {
+        type: 'input',
+        name:'Solving',
+        message:'What problems did it solve',
+        Validate: (answer) => {
+            if (answer !== '') {
+                return true;
+            }else{
+            return false;
+            }
+        },
+    },
+    {
+        type: 'input',
+        name: 'Learning',
+        message: 'What did you learn',
+        Validate: (answer) => {
+            if (answer !== '') {
+                return true;
+            }else{
+            return false;
+            }
         },
     },
     {
         type: 'input',
         name:
         message:
+        Validate: (answer) => {
+            if (answer !== '') {
+                return true;
+            }else{
+                return false;
+            };
+        },
     },
     {
         type: 'input',
         name:
         message:
+        Validate: (answer) => {
+            if (answer !== '') {
+                return true;
+            }else{
+                return false;
+            };
+        },
     },
     {
         type: 'input',
         name:
         message:
-    },
-    {
-        type: 'input',
-        name:
-        message:
-    },
-    {
-        type: 'input',
-        name:
-        message:
-    },
-    {
-        type: 'input',
-        name:
-        message:
-    },
+        Validate: (answer) => {
+            if (answer !== '') {
+                return true;
+            }else{
+                return false;
+            };
+        },
+    }
 ];
 
 // TODO: Create a function to write README file
