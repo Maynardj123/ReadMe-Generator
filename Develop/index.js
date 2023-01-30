@@ -5,10 +5,10 @@ const fs = require('fs');
 const questions = [
     {
         type: 'input',
-        name: 'motive',
-        message: 'what was your motivation?',
-        Validate: (answer) => {
-            if (answer !== '') {
+        name: 'title',
+        message: 'What is the name of your project?',
+        Validate: (titleInput) => {
+            if (titleInput) {
                 return true;
             }else{
             return false;
@@ -17,10 +17,10 @@ const questions = [
     },
     {
         type: 'input',
-        name:'Why',
-        message: 'Why did you build this project',
-        Validate: (answer) => {
-            if (answer !== '') {
+        name:'description',
+        message: 'Why did you build this project? what was your motivation? What problems did it solve? What did you learn?',
+        Validate: (descriptionInput) => {
+            if (descriptionInput) {
                 return true;
             }else{
             return false;
@@ -29,10 +29,10 @@ const questions = [
     },
     {
         type: 'input',
-        name:'Solving',
-        message:'What problems did it solve',
-        Validate: (answer) => {
-            if (answer !== '') {
+        name:'installation',
+        message:'What are the steps to install project? What is the step-by-step to get it working?',
+        Validate: (installationInput) => {
+            if (installationInput) {
                 return true;
             }else{
             return false;
@@ -41,10 +41,10 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Learning',
-        message: 'What did you learn',
-        Validate: (answer) => {
-            if (answer !== '') {
+        name: 'usage',
+        message: 'instructions and examples, screenshots if needed',
+        Validate: (usageInput) => {
+            if (usageInput) {
                 return true;
             }else{
             return false;
@@ -53,10 +53,10 @@ const questions = [
     },
     {
         type: 'input',
-        name:
-        message:
-        Validate: (answer) => {
-            if (answer !== '') {
+        name:'credits',
+        message:'list of your collaborators with links to their github profiles',
+        Validate: (creditInput) => {
+            if (creditInput) {
                 return true;
             }else{
                 return false;
@@ -65,28 +65,10 @@ const questions = [
     },
     {
         type: 'input',
-        name:
-        message:
-        Validate: (answer) => {
-            if (answer !== '') {
-                return true;
-            }else{
-                return false;
-            };
-        },
+        name:'license',
+    
     },
-    {
-        type: 'input',
-        name:
-        message:
-        Validate: (answer) => {
-            if (answer !== '') {
-                return true;
-            }else{
-                return false;
-            };
-        },
-    }
+ 
 ];
 
 // TODO: Create a function to write README file
