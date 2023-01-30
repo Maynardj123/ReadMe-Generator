@@ -36,15 +36,31 @@ if (!license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ##Description
 
-  ##Installation
 
-  ##Usage
+  ## Description
+  ${data.description}
 
-  ##Credits
+  ## Table of Contents
+###[Installation] (#installation)
+###[Usage](#usage)
+###[Credits](#credits)
+###[License](#license)
 
-  ##License
+  ## Installation
+  ${data.installation}
+
+
+  ## Usage
+  ${data.usage}
+
+
+  ## Credits
+  ${data.credits}
+
+
+  ## License
+  ${data.license}
 
 
 `;
@@ -54,7 +70,8 @@ module.exports = generateMarkdown;
 
 
 
-// to add if needed 
+// to add if needed \|/
+// ## Table of Contents
 // ##Badges
 // ##Features
 // ## How to Contribute
