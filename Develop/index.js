@@ -4,17 +4,55 @@ const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = [
     {
-        type: 'input'
-        name: 'what was your motivation'
-        
-    }
+        type: 'input',
+        name: 
+        message: 'what was your motivation',
+        Validate: (answer) => {
+            if (answer !== '') {
+                return true;
+            }
+            return 'whats the motive';
+        },
+    },
+    {
+        type: 'input',
+        name:
+        message:
+    },
+    {
+        type: 'input',
+        name:
+        message:
+    },
+    {
+        type: 'input',
+        name:
+        message:
+    },
+    {
+        type: 'input',
+        name:
+        message:
+    },
+    {
+        type: 'input',
+        name:
+        message:
+    },
+    {
+        type: 'input',
+        name:
+        message:
+    },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    .promptUser()
+}
 
 // Function call to initialize app
 init();
