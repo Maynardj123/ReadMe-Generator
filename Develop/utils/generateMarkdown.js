@@ -41,11 +41,7 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
-  ## Table of Contents
-###[Installation] (#installation)
-###[Usage](#usage)
-###[Credits](#credits)
-###[License](#license)
+
 
   ## Installation
   ${data.installation}
@@ -60,6 +56,8 @@ function generateMarkdown(data) {
 
 
   ## License
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
   ${data.license}
 
 
@@ -68,7 +66,11 @@ function generateMarkdown(data) {
 
 module.exports = generateMarkdown;
 
-
+// ## Table of Contents
+// ###[Installation] (#installation)
+// ###[Usage](#usage)
+// ###[Credits](#credits)
+// ###[License](#license)
 
 // to add if needed \|/
 // ## Table of Contents
