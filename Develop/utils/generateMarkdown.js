@@ -15,7 +15,7 @@ if (!license) {
   return ``
 }else if (license === 'mit'){
   return `https://choosealicense.com/licenses/mit/`
-}else if (license == 'apache'){
+}else if (license === 'apache'){
   return `https://www.apache.org/licenses/LICENSE-2.0`
 }else if (license === 'GNU'){
   return `https://choosealicense.com/licenses/agpl-3.0/`
