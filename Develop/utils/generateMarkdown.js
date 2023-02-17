@@ -13,7 +13,7 @@ return `[![${license}](https://img.shields.io/badge/License-${license}-yellow.sv
 function renderLicenseLink(license) {
 if (!license) {
   return ``
-}else if (license === 'mit'){
+}else if (license === 'MIT'){
   return `https://choosealicense.com/licenses/mit/`
 }else if (license === 'apache'){
   return `https://www.apache.org/licenses/LICENSE-2.0`
@@ -34,7 +34,9 @@ if (!license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  ## Title
+  ${data.title}
 
 
 
@@ -58,7 +60,7 @@ function generateMarkdown(data) {
   ## License
   ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
-  ${data.license}
+
 
 
 `;
