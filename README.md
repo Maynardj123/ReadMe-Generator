@@ -1,2 +1,0 @@
-# ReadMe-Challenge
-Node Challenge
