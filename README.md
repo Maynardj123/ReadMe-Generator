@@ -16,7 +16,7 @@
   ## Usage
   open integrated terminal by right clicking on index.js. once opened type npm i inquierer, proceeded by typing node index.js
 
-
+[video for challenge 9.webm](https://user-images.githubusercontent.com/120345723/219547235-68371d7a-eb9e-4ef4-a630-075105746182.webm)
 
   ## Credits
   Maynardj123
@@ -25,3 +25,7 @@
   ## License
   MIT
   https://choosealicense.com/licenses/mit/
+
+
+
+
