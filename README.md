@@ -2,7 +2,10 @@
   ## Title
   Readme Generator
 
-
+![GitHub language count](https://img.shields.io/github/languages/count/Maynardj123/ReadMe-Challenge?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/Maynardj123/ReadMe-Challenge?color=green&style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/Maynardj123/ReadMe-Challenge?color=yellow&style=flat-square)
+![GitHub](https://img.shields.io/github/license/Maynardj123/ReadMe-Challenge?color=orange&style=flat-square)
 
   ## Description
   I built this in order to get a better understanding on Node.js and Javascript. My motivation was to learn more on how to use inquirer. I learned how to make a proper readme.
